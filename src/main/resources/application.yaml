@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: localstack-demo
+  ## As we are using LocalStackContainer with @ServiceConnection support,
+  ## we don't need to configure the following properties
+#  cloud:
+#    aws:
+#      region:
+#        static: us-east-1
+#      credentials:
+#        access-key: noop
+#        secret-key: noop
+#      s3:
+#        endpoint: http://localhost:4566
+#      sqs:
+#        endpoint: http://localhost:4566
+
+app:
+  bucket-name: testbucket
+  queue-name: testqueue
